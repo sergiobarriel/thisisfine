@@ -37,10 +37,3 @@ jobs:
           tags: |
             ${{ vars.DOCKER_HUB_USERNAME }}/thisisfine:latest
             ${{ vars.DOCKER_HUB_USERNAME }}/thisisfine:${{ steps.timestamp.outputs.tag }}
-          labels: |
-            org.opencontainers.image.title=This Is Fine
-            org.opencontainers.image.description=Sample Docker image for academic and learning purposes
-            org.opencontainers.image.url=https://hub.docker.com/r/sergiobarriel/thisisfine
-            org.opencontainers.image.source=${{ github.server_url }}/${{ github.repository }}
-            org.opencontainers.image.revision=${{ github.sha }}
-            org.opencontainers.image.created=${{ steps.timestamp.outputs.tag }}
