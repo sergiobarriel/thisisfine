@@ -28,5 +28,7 @@ docker build -t thisisfine .
 docker run -d -p 8080:80 thisisfine
 ```
 
-Open [http://localhost:8080](http://localhost:8080)
+Once the container is running, open your browser and navigate to [http://localhost:8080](http://localhost:8080) to see the magic happen
+
+![This is fine](frame.png)
 
